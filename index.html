@@ -1,0 +1,1411 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GONZALO MADROÑAL | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@700;800&amp;family=Inter:wght@400;600&amp;family=Space+Mono:wght@400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#d3def6",
+              "on-surface": "#e5e2e1",
+              "on-background": "#e5e2e1",
+              "on-surface-variant": "#baccb0",
+              "on-tertiary-fixed": "#111c2d",
+              error: "#ffb4ab",
+              "on-primary-container": "#107100",
+              "on-secondary-container": "#006a6f",
+              "on-secondary": "#00373a",
+              "tertiary-fixed": "#d8e3fb",
+              "surface-container-low": "#1c1b1b",
+              background: "#131313",
+              "on-primary": "#053900",
+              "surface-container": "#201f1f",
+              "surface-variant": "#353534",
+              "inverse-on-surface": "#313030",
+              surface: "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-bright": "#3a3939",
+              "surface-container-highest": "#353534",
+              "on-tertiary-fixed-variant": "#3c475a",
+              "on-primary-fixed": "#022100",
+              secondary: "#dcfdff",
+              "on-secondary-fixed-variant": "#004f53",
+              "outline-variant": "#3c4b35",
+              primary: "#efffe3",
+              "surface-dim": "#131313",
+              "on-primary-fixed-variant": "#095300",
+              outline: "#85967c",
+              "inverse-surface": "#e5e2e1",
+              "error-container": "#93000a",
+              "on-secondary-fixed": "#002022",
+              "on-error": "#690005",
+              tertiary: "#faf9ff",
+              "on-tertiary-container": "#576276",
+              "surface-container-high": "#2a2a2a",
+              "primary-fixed": "#79ff5b",
+              "primary-container": "#39ff14",
+              "secondary-fixed-dim": "#00dce6",
+              "secondary-container": "#00f1fd",
+              "inverse-primary": "#106e00",
+              "on-tertiary": "#263143",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#bcc7de",
+              "surface-tint": "#2ae500",
+              "primary-fixed-dim": "#2ae500",
+              "secondary-fixed": "#6ff6ff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              gutter: "24px",
+              "container-max": "1440px",
+              "margin-desktop": "80px",
+              "stack-lg": "64px",
+              base: "8px",
+              "stack-md": "32px",
+              "margin-mobile": "20px",
+              "stack-sm": "12px",
+            },
+            fontFamily: {
+              "display-xl-mobile": ["Geist"],
+              "body-md": ["Inter"],
+              "display-xl": ["Geist"],
+              "headline-lg-mobile": ["Geist"],
+              "headline-lg": ["Geist"],
+              "label-sm": ["Inter"],
+              "code-accent": ["Space Mono"],
+            },
+            fontSize: {
+              "display-xl-mobile": [
+                "48px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-md": [
+                "16px",
+                { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" },
+              ],
+              "display-xl": [
+                "80px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.04em",
+                  fontWeight: "800",
+                },
+              ],
+              "headline-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" },
+              ],
+              "code-accent": [
+                "14px",
+                {
+                  lineHeight: "1.4",
+                  letterSpacing: "0.1em",
+                  fontWeight: "400",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-background text-on-surface font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300"
+    >
+      <div
+        class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto"
+      >
+        <a
+          href="#"
+          class="font-display-xl-mobile text-headline-lg-mobile tracking-tighter text-primary no-underline"
+          >GM</a
+        >
+        <nav
+          class="hidden md:flex gap-8 items-center"
+          aria-label="Main navigation"
+        >
+          <a
+            class="nav-link font-code-accent text-code-accent text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1"
+            href="#work"
+            >Work</a
+          >
+          <a
+            class="nav-link font-code-accent text-code-accent text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="nav-link font-code-accent text-code-accent text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="nav-link font-code-accent text-code-accent text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1"
+            href="#experience"
+            >Experience</a
+          >
+          <a
+            class="nav-link font-code-accent text-code-accent text-on-surface-variant hover:text-primary transition-colors duration-300 pb-1"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <a
+            id="resume-btn"
+            href="CV_Gonzalo_Madroñal.pdf"
+            download="CV_Gonzalo_Madroñal.pdf"
+            class="hidden md:flex items-center justify-center font-code-accent text-code-accent text-primary border border-primary px-6 py-2 rounded-DEFAULT hover:bg-primary/10 hover:shadow-[0_0_15px_theme('colors.primary-fixed-dim')] transition-all duration-300 no-underline"
+            aria-label="Download resume"
+          >
+            RESUME
+          </a>
+          <button
+            id="menu-toggle"
+            class="md:hidden text-primary p-2"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-40 md:hidden"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <div class="absolute inset-0 bg-background/90 backdrop-blur-2xl"></div>
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full gap-8 px-gutter"
+      >
+        <button
+          id="menu-close"
+          class="absolute top-6 right-6 text-primary p-2"
+          aria-label="Close navigation menu"
+        >
+          <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        <a
+          class="nav-link-mobile text-2xl font-display-xl-mobile text-on-surface-variant hover:text-primary transition-colors duration-300 no-underline"
+          href="#work"
+          >Work</a
+        >
+        <a
+          class="nav-link-mobile text-2xl font-display-xl-mobile text-on-surface-variant hover:text-primary transition-colors duration-300 no-underline"
+          href="#skills"
+          >Skills</a
+        >
+        <a
+          class="nav-link-mobile text-2xl font-display-xl-mobile text-on-surface-variant hover:text-primary transition-colors duration-300 no-underline"
+          href="#services"
+          >Services</a
+        >
+        <a
+          class="nav-link-mobile text-2xl font-display-xl-mobile text-on-surface-variant hover:text-primary transition-colors duration-300 no-underline"
+          href="#experience"
+          >Experience</a
+        >
+        <a
+          class="nav-link-mobile text-2xl font-display-xl-mobile text-on-surface-variant hover:text-primary transition-colors duration-300 no-underline"
+          href="#contact"
+          >Contact</a
+        >
+        <a
+          href="CV_Gonzalo_Madroñal.pdf"
+          download="CV_Gonzalo_Madroñal.pdf"
+          class="flex items-center justify-center font-code-accent text-code-accent text-primary border border-primary px-8 py-3 rounded-DEFAULT hover:bg-primary/10 transition-all duration-300 mt-4 no-underline"
+          aria-label="Download resume"
+        >
+          RESUME
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section
+        class="relative min-h-screen flex items-center justify-center pt-margin-desktop px-gutter bg-grid overflow-hidden"
+        id="hero"
+        aria-label="Hero section"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background z-0 pointer-events-none"
+        ></div>
+        <div
+          class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[120px] pointer-events-none"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-primary-container/5 rounded-full blur-[100px] pointer-events-none"
+        ></div>
+        <div
+          class="relative z-10 max-w-container-max mx-auto text-center flex flex-col items-center gap-stack-md"
+        >
+          <p
+            class="font-code-accent text-code-accent text-secondary-container tracking-[0.2em] uppercase"
+            data-aos="fade-in"
+          >
+            Welcome to my digital space
+          </p>
+          <h1
+            class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary text-glow"
+            data-aos="fade-up"
+          >
+            GONZALO MADROÑAL
+          </h1>
+          <p
+            class="font-code-accent text-code-accent text-on-surface-variant uppercase tracking-widest max-w-2xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Web Developer &amp; Creative Programmer
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 mt-stack-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <a
+              class="px-8 py-4 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-DEFAULT hover:shadow-[0_0_30px_theme('colors.secondary-container')] transition-all duration-300"
+              href="#work"
+            >
+              Explore Work
+            </a>
+            <a
+              class="px-8 py-4 border border-secondary-container text-secondary-container font-label-sm text-label-sm rounded-DEFAULT hover:bg-secondary-container/10 transition-all duration-300"
+              href="#contact"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto relative z-10"
+        id="about"
+        aria-label="About me"
+      >
+        <div class="grid md:grid-cols-2 gap-stack-lg items-center">
+          <div class="space-y-6" data-aos="fade-right">
+            <h2 class="font-headline-lg text-headline-lg text-primary">
+              System initialized.<br /><span class="text-on-surface-variant"
+                >Hello, World.</span
+              >
+            </h2>
+            <p class="text-on-surface-variant">
+              19-year-old programming student at UTN. I engineer digital
+              experiences that bridge the gap between complex architectures and
+              seamless interfaces—building everything from SaaS platforms to
+              AI-powered tools.
+            </p>
+            <p class="text-on-surface-variant">
+              Based in Buenos Aires, Argentina. 3+ years of hands-on
+              development, focused on high-performance, production-ready
+              solutions that push the boundaries of modern web development.
+            </p>
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-full border border-green-400/30"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-green-400 animate-pulse"
+              ></span>
+              <span class="font-code-accent text-code-accent text-green-400"
+                >STATUS: AVAILABLE FOR HIRE</span
+              >
+            </div>
+          </div>
+          <div class="grid gap-4" data-aos="fade-left" data-aos-delay="100">
+            <div
+              class="glass-card p-6 rounded-lg glow-hover transition-all duration-300"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <span
+                  class="material-symbols-outlined text-secondary-container"
+                  aria-hidden="true"
+                  >brush</span
+                >
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+                >
+                  Creativity
+                </h3>
+              </div>
+              <p class="text-on-surface-variant text-sm">
+                Pushing visual boundaries with bespoke UI/UX and cinematic
+                design.
+              </p>
+            </div>
+            <div
+              class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 ml-0 md:ml-8"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <span
+                  class="material-symbols-outlined text-secondary-container"
+                  aria-hidden="true"
+                  >code_blocks</span
+                >
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+                >
+                  Technical Excellence
+                </h3>
+              </div>
+              <p class="text-on-surface-variant text-sm">
+                Clean, maintainable, and highly optimized code architectures.
+              </p>
+            </div>
+            <div
+              class="glass-card p-6 rounded-lg glow-hover transition-all duration-300"
+            >
+              <div class="flex items-center gap-4 mb-2">
+                <span
+                  class="material-symbols-outlined text-secondary-container"
+                  aria-hidden="true"
+                  >architecture</span
+                >
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+                >
+                  Future-Proof Solutions
+                </h3>
+              </div>
+              <p class="text-on-surface-variant text-sm">
+                Building scalable systems designed for tomorrow's web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto"
+        id="skills"
+        aria-label="Technical skills"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-stack-md"
+          data-aos="fade-in"
+        >
+          Technical_Stack
+        </h2>
+        <div class="grid md:grid-cols-3 gap-stack-md">
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center gap-3 mb-5">
+              <span
+                class="material-symbols-outlined text-secondary-container text-2xl"
+                aria-hidden="true"
+                >code</span
+              >
+              <h3
+                class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+              >
+                Languages
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >JavaScript</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >TypeScript</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Python</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Java</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >C</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >C++</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >HTML</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >CSS</span
+              >
+            </div>
+          </div>
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center gap-3 mb-5">
+              <span
+                class="material-symbols-outlined text-secondary-container text-2xl"
+                aria-hidden="true"
+                >layers</span
+              >
+              <h3
+                class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+              >
+                Frameworks &amp; Libraries
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >React</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Next.js</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Node.js</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Express</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Tailwind CSS</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >jQuery</span
+              >
+            </div>
+          </div>
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center gap-3 mb-5">
+              <span
+                class="material-symbols-outlined text-secondary-container text-2xl"
+                aria-hidden="true"
+                >handyman</span
+              >
+              <h3
+                class="font-label-sm text-label-sm uppercase text-primary tracking-widest"
+              >
+                Tools &amp; Services
+              </h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Firebase</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >MongoDB</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >MySQL</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Cloudinary</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Vercel</span
+              >
+              <span
+                class="skill-chip px-3 py-1.5 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                >Git/GitHub</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto"
+        id="services"
+        aria-label="Services"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-stack-md"
+          data-aos="fade-in"
+        >
+          Services
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 text-center"
+            data-aos="fade-up"
+          >
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary-container/10 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary-container text-3xl"
+                aria-hidden="true"
+                >web</span
+              >
+            </div>
+            <h3
+              class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-3"
+            >
+              Web Development
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Full-stack web applications with modern frameworks, optimized for
+              performance and scalability.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary-container/10 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary-container text-3xl"
+                aria-hidden="true"
+                >design_services</span
+              >
+            </div>
+            <h3
+              class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-3"
+            >
+              UI/UX Design
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Custom interfaces with futuristic aesthetics and seamless user
+              experiences.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary-container/10 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary-container text-3xl"
+                aria-hidden="true"
+                >smart_toy</span
+              >
+            </div>
+            <h3
+              class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-3"
+            >
+              AI Integration
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Smart features powered by AI and machine learning to automate and
+              enhance your platform.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-14 h-14 mx-auto mb-4 rounded-full bg-secondary-container/10 flex items-center justify-center"
+            >
+              <span
+                class="material-symbols-outlined text-secondary-container text-3xl"
+                aria-hidden="true"
+                >support</span
+              >
+            </div>
+            <h3
+              class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-3"
+            >
+              Technical Consulting
+            </h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Architecture design, code review, and performance optimization for
+              existing projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience / Timeline -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto"
+        id="experience"
+        aria-label="Experience timeline"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-stack-md"
+          data-aos="fade-in"
+        >
+          Timeline
+        </h2>
+        <div class="relative">
+          <div class="timeline-line hidden md:block" aria-hidden="true"></div>
+          <div class="space-y-stack-md">
+            <div class="relative md:flex md:justify-end" data-aos="fade-right">
+              <div class="hidden md:block w-1/2 pr-stack-md"></div>
+              <div
+                class="absolute left-[13px] md:left-1/2 md:-translate-x-1/2 top-2 timeline-dot z-10"
+                aria-hidden="true"
+              ></div>
+              <div
+                class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 md:w-1/2 ml-10 md:ml-0"
+              >
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest"
+                    >2022</span
+                  >
+                </div>
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-2"
+                >
+                  First Steps Into Web
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Began my programming journey. Learned HTML, CSS, and
+                  JavaScript fundamentals through self-study and university
+                  courses at UTN.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="relative md:flex"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <div
+                class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 md:w-1/2 ml-10 md:ml-0"
+              >
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest"
+                    >2023</span
+                  >
+                </div>
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-2"
+                >
+                  Freelance Development
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Started freelancing and building real-world projects for
+                  clients. Expanded skills into React, Node.js, and modern
+                  tooling.
+                </p>
+              </div>
+              <div
+                class="absolute left-[13px] md:left-1/2 md:-translate-x-1/2 top-2 timeline-dot z-10"
+                aria-hidden="true"
+              ></div>
+              <div class="hidden md:block w-1/2 pl-stack-md"></div>
+            </div>
+
+            <div
+              class="relative md:flex md:justify-end"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <div class="hidden md:block w-1/2 pr-stack-md"></div>
+              <div
+                class="absolute left-[13px] md:left-1/2 md:-translate-x-1/2 top-2 timeline-dot z-10"
+                aria-hidden="true"
+              ></div>
+              <div
+                class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 md:w-1/2 ml-10 md:ml-0"
+              >
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest"
+                    >2024</span
+                  >
+                </div>
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-2"
+                >
+                  Full-Stack Expansion
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Developed complex applications including SaaS platforms,
+                  dashboards, and business tools. Adopted TypeScript and Next.js
+                  for production-grade deployments.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="relative md:flex"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div
+                class="glass-card p-6 rounded-lg glow-hover transition-all duration-300 md:w-1/2 ml-10 md:ml-0"
+              >
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="font-label-sm text-label-sm text-secondary-container uppercase tracking-widest"
+                    >2025 — Present</span
+                  >
+                </div>
+                <h3
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest mb-2"
+                >
+                  Creative Programmer
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Building advanced AI-powered tools, real-time analytics
+                  platforms, and immersive web experiences. Focused on
+                  futuristic UI and system architecture.
+                </p>
+              </div>
+              <div
+                class="absolute left-[13px] md:left-1/2 md:-translate-x-1/2 top-2 timeline-dot z-10"
+                aria-hidden="true"
+              ></div>
+              <div class="hidden md:block w-1/2 pl-stack-md"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto"
+        id="work"
+        aria-label="Featured projects"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-stack-md"
+          data-aos="fade-in"
+        >
+          Featured_Deployments
+        </h2>
+        <div class="grid md:grid-cols-2 gap-stack-md">
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60"
+              ></div>
+              <span
+                class="material-symbols-outlined text-7xl text-secondary-container/20 z-0"
+                aria-hidden="true"
+                >receipt</span
+              >
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  Xplitter
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/calculadora-gastos"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                Web app for tracking and organizing shared expenses with automatic totals, multi-user support, and a clean real-time interface.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >JavaScript</span
+                >
+              </div>
+              <a
+                href="https://gastosjuntada.vercel.app/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60 pointer-events-none"
+              ></div>
+              <img
+                id="workImg"
+                src="assets/images/fintrack.png"
+                alt="FinTrack"
+                class="w-full h-full object-cover z-0 project-image-zoom"
+              />
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  FinTrack
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/fintrack"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                Full-featured personal finance manager with income/expense tracking, interactive charts, budget management, multi-wallet support, and dark mode.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >HTML</span
+                >
+              </div>
+              <a
+                href="https://soyelmadro.github.io/fintrack/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60 pointer-events-none"
+              ></div>
+              <img
+                id="workImg"
+                src="assets/images/codedoc-ai.png"
+                alt="CodeDoc AI"
+                class="w-full h-full object-cover z-0 project-image-zoom"
+              />
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  CodeDoc AI
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/codedoc-ai"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                AI-powered documentation generator using Gemini AI. Analyzes source code and produces clear, detailed explanations of functions, classes, and code structures.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >Next.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >Gemini AI</span
+                >
+              </div>
+              <a
+                href="https://codedoc-ai.vercel.app/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60 pointer-events-none"
+              ></div>
+              <img
+                id="workImg"
+                src="assets/images/watchnext.png"
+                alt="WatchNext"
+                class="w-full h-full object-cover z-0 project-image-zoom"
+              />
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  WatchNext
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/watchnext"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                Movie and TV show discovery platform powered by TMDB API. Search, view detailed information, rate content, and save to personal watchlists.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >Vite</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >TMDB API</span
+                >
+              </div>
+              <a
+                href="https://mdrwatchnext.netlify.app/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60 pointer-events-none"
+              ></div>
+              <img
+                id="workImg"
+                src="assets/images/typing-game.png"
+                alt="Typing Game"
+                class="w-full h-full object-cover z-0 project-image-zoom"
+              />
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  Typing Game
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/typing-game"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                Dynamic typing speed game that challenges users to improve WPM and accuracy through timed word trials with real-time feedback and performance stats.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >HTML</span
+                >
+              </div>
+              <a
+                href="https://65a429e9e7ac41aa2ac30bca--chimerical-quokka-ccd05e.netlify.app/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+          <article
+            class="glass-card rounded-xl overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="aspect-video bg-gradient-to-br from-secondary-container/20 to-primary-container/5 relative overflow-hidden flex items-center justify-center"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-60 pointer-events-none"
+              ></div>
+              <img
+                id="workImg"
+                src="assets/images/securegen.png"
+                alt="SecureGen"
+                class="w-full h-full object-cover z-0 project-image-zoom"
+              />
+            </div>
+            <div class="p-6 relative z-20 -mt-6">
+              <div class="flex items-start justify-between mb-3 pt-4">
+                <h3
+                  class="font-headline-lg-mobile text-headline-lg-mobile text-primary text-glow"
+                >
+                  SecureGen
+                </h3>
+                <a
+                  href="https://github.com/SoyElMadro/SecureGen"
+                  target="_blank"
+                  class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container border border-outline-variant hover:border-secondary-container hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group/btn"
+                  aria-label="View source on GitHub"
+                >
+                  <span class="font-code-accent text-code-accent text-xs text-on-surface-variant group-hover/btn:text-secondary-container transition-colors">GH</span>
+                </a>
+              </div>
+              <p class="text-on-surface-variant mb-4 text-sm leading-relaxed">
+                Customizable secure password generator with configurable length, character types, and strength indicators for enhanced online security.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-container border border-outline-variant rounded-full font-code-accent text-code-accent text-xs text-secondary-fixed-dim"
+                  >HTML</span
+                >
+              </div>
+              <a
+                href="https://darling-sawine-61aa4f.netlify.app/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-code-accent text-code-accent text-xs text-secondary-container hover:text-primary transition-colors duration-300"
+              >
+                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                Live Demo
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="py-stack-lg px-gutter max-w-container-max mx-auto"
+        id="contact"
+        aria-label="Contact"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg text-primary border-b border-outline-variant pb-4 mb-stack-md"
+          data-aos="fade-in"
+        >
+          Contact
+        </h2>
+        <div class="grid md:grid-cols-2 gap-stack-lg">
+          <div data-aos="fade-right">
+            <p class="text-on-surface-variant mb-6 text-lg leading-relaxed">
+              Have a project in mind? Let's build something extraordinary.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-xl"
+                    aria-hidden="true"
+                    >location_on</span
+                  >
+                </div>
+                <div>
+                  <p
+                    class="font-code-accent text-code-accent text-primary text-xs uppercase tracking-widest"
+                  >
+                    Location
+                  </p>
+                  <p class="text-on-surface-variant text-sm">
+                    Merlo, Buenos Aires, Argentina
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-container/10 flex items-center justify-center flex-shrink-0"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-xl"
+                    aria-hidden="true"
+                    >mail</span
+                  >
+                </div>
+                <div>
+                  <p
+                    class="font-code-accent text-code-accent text-primary text-xs uppercase tracking-widest"
+                  >
+                    Email
+                  </p>
+                  <p class="text-on-surface-variant text-sm">
+                    madronalgonzalo06@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <a
+                href="https://github.com/SoyElMadro"
+                target="_blank"
+                class="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group"
+                aria-label="GitHub"
+              >
+                <span
+                  class="font-code-accent text-code-accent text-on-surface-variant group-hover:text-secondary-container transition-colors text-xs"
+                  >GH</span
+                >
+              </a>
+              <a
+                href="https://www.linkedin.com/in/madro/"
+                target="_blank"
+                class="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:shadow-[0_0_15px_theme('colors.secondary-container')] transition-all duration-300 group"
+                aria-label="LinkedIn"
+              >
+                <span
+                  class="font-code-accent text-code-accent text-on-surface-variant group-hover:text-secondary-container transition-colors text-xs"
+                  >LI</span
+                >
+              </a>
+            </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="100">
+            <form
+              id="contact-form"
+              class="glass-card p-6 md:p-8 rounded-lg space-y-5"
+              novalidate
+            >
+              <div>
+                <label
+                  for="name"
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest block mb-2"
+                  >Name</label
+                >
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest block mb-2"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="font-label-sm text-label-sm uppercase text-primary tracking-widest block mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input"
+                  placeholder="Tell me about your project..."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full px-8 py-4 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-DEFAULT hover:shadow-[0_0_30px_theme('colors.secondary-container')] transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <span>Send Message</span>
+                <span
+                  class="material-symbols-outlined text-lg"
+                  aria-hidden="true"
+                  >send</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="w-full py-stack-md mt-stack-lg border-t border-outline-variant/10 bg-background relative z-10"
+      aria-label="Footer"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-4"
+      >
+        <div class="font-code-accent text-primary text-xs md:text-sm">
+          &copy; 2026 GONZALO MADROÑAL &mdash; ALL RIGHTS RESERVED
+        </div>
+        <div
+          class="flex gap-6 font-label-sm text-label-sm uppercase tracking-widest"
+        >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="https://github.com/SoyElMadro"
+            target="_blank"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="https://www.linkedin.com/in/madro/"
+            target="_blank"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
